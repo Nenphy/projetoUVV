@@ -1,0 +1,32 @@
+form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:18px;
+  border-radius:12px;
+  background:linear-gradient(180deg,#fff,#fbfaf7);
+  box-shadow:0 8px 24px rgba(0,0,0,0.05);
+  border:1px solid rgba(0,0,0,0.04);
+}
+label{font-weight:700;color:var(--ink);font-size:13px}
+input,textarea{
+  border:1px solid rgba(0,0,0,0.08);
+  padding:10px 12px;border-radius:8px;font-size:14px;color:var(--ink);
+  background:linear-gradient(180deg,#fff,#fbfbfb)
+}
+textarea{min-height:140px;resize:vertical}
+button{
+  background:linear-gradient(90deg,var(--gold),#d6b559);
+  color:var(--ink);border:none;padding:10px 14px;border-radius:10px;font-weight:800;cursor:pointer;
+  align-self:flex-start;
+}
+button:hover{filter:brightness(.97);transform:translateY(-1px);transition:all .12s ease}
+.info{
+  font-size:13px;color:var(--muted);margin-top:10px;
+  background:linear-gradient(180deg,#fff,#fbfaf7);
+  padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.04);
+}
+
+main > .container{padding-top:12px}
+
+@media (max-width:480px){form{padding:14px}button{width:100%}}

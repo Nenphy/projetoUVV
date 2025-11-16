@@ -1,0 +1,30 @@
+.lane{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-bottom:14px;
+}
+@media (max-width:840px){.lane{grid-template-columns:1fr}}
+
+.card-tech{
+  padding:18px;border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.04);
+}
+.card-tech h2{color:var(--blue);margin-bottom:8px}
+.tech-list{list-style:none;padding:0;margin:8px 0 0}
+.tech-list li{
+  padding:8px 0;border-top:1px solid rgba(0,0,0,0.04);
+  color:var(--muted);font-size:14px;
+}
+.tech-list li:first-child{border-top:0;padding-top:0}
+
+.mechanism{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:12px;
+}
+.img-placeholder{
+  min-height:350px
+}
+@media (max-width:640px){.mechanism{grid-template-columns:1fr}}
